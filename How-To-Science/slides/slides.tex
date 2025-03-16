@@ -1,0 +1,60 @@
+\documentclass[pdflatex, sn-mathphys-num]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{microtype}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{ref.bib}
+
+\usetheme[numbering=counter, progressbar=frametitle, background=light]{metropolis}
+\usecolortheme{spruce}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{primary}{RGB}{88, 24, 69}
+\definecolor{secondary}{RGB}{255, 87, 51}
+
+\setbeamercolor{frametitle}{fg=white, bg=primary}
+\setbeamercolor{progress bar}{fg=secondary, bg=gray!30}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+
+\title{How Science Works}
+\subtitle{And What Doesn't Work}
+\author{Julian Avila}
+\institute{Universidad Distrital Francisco José de Caldas}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{What is the Method for Science?}
+\include{Sections/what-is-science}
+
+\section{Cores of Scientific Method}
+\include{Sections/cores-scientific-method}
+
+\section{Practical Example}
+\include{Sections/practical-example}
+
+\section{Important Facts}
+\include{Sections/important-facts}
+
+\section{Conclusions}
+\include{Sections/conclusions}
+
+\section{Bibliography}
+\begin{frame}[allowframebreaks]{Bibliography}
+	\printbibliography
+\end{frame}
+
+\end{document}
