@@ -6,12 +6,11 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{microtype}
 \usepackage[sorting=none]{biblatex}
-\addbibresource{ref.bib}
+\usepackage{lmodern}
+\addbibresource{../material/references.bib}
 
 \usetheme[numbering=counter, progressbar=frametitle, background=light]{metropolis}
 \usecolortheme{spruce}
-
-\renewcommand{\familydefault}{\sfdefault}
 
 \definecolor{primary}{RGB}{88, 24, 69}
 \definecolor{secondary}{RGB}{255, 87, 51}
@@ -22,7 +21,7 @@
 \setbeamerfont{title}{size=\LARGE, series=\bfseries}
 
 \title{How Science Works}
-\subtitle{And What Doesn't Work}
+\subtitle{And What Fails the Method}
 \author{Julian Avila}
 \institute{Universidad Distrital Francisco José de Caldas}
 \date{\today}
@@ -37,14 +36,11 @@
 	\tableofcontents
 \end{frame}
 
-\section{What is the Method for Science?}
+\section{What is the Scientific Method?}
 \include{Sections/what-is-science}
 
-\section{Cores of Scientific Method}
+\section{Core Principles of the Scientific Method}
 \include{Sections/cores-scientific-method}
-
-\section{Practical Example}
-\include{Sections/practical-example}
 
 \section{Important Facts}
 \include{Sections/important-facts}
@@ -54,6 +50,7 @@
 
 \section{Bibliography}
 \begin{frame}[allowframebreaks]{Bibliography}
+	\footnotesize
 	\printbibliography
 \end{frame}
 
