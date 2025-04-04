@@ -1,0 +1,67 @@
+\documentclass[aspectratio=169,sn-mathphys-num]{beamer}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[sorting=none]{biblatex}
+\usepackage{ragged2e}
+\addbibresource{./material/references.bib}
+
+\usetheme[numbering=counter, progressbar=frametitle, background=light]{metropolis}
+
+\usecolortheme{dove}
+\definecolor{primary}{RGB}{88, 24, 69}
+\definecolor{secondary}{RGB}{0, 168, 150}
+
+\setbeamercovered{transparent}
+\setbeamercolor{frametitle}{fg=white, bg=primary}
+\setbeamercolor{progress bar}{fg=secondary}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamercolor{alerted text}{fg=secondary}
+\setbeamercolor{block title}{fg=primary}
+\setbeamercolor{block body}{bg=white}
+
+\title{How to Write in Science}
+\author{Julian Avila}
+\institute{Universidad Distrital Francisco José de Caldas}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+	\setbeamertemplate{section in toc}[circle]
+	\tableofcontents
+\end{frame}
+
+\section{General Advice}
+\input{./sections/general-advice.tex}
+
+\section{Active or Passive Voice}
+\input{./sections/active-passive-voice.tex}
+
+\section{Proper Grammar}
+\input{./sections/grammar.tex}
+
+\section{Writing a Document}
+\input{./sections/document.tex}
+
+\section{Bibliography}
+\begin{frame}[allowframebreaks]{Bibliography}
+	\printbibliography
+\end{frame}
+
+\begin{frame}{Thank You!}
+	\centering
+	{\LARGE Thank you for your attention!}
+	\vspace{0.5cm}
+
+	\Large Questions?
+\end{frame}
+
+\end{document}
