@@ -1,0 +1,65 @@
+\documentclass[aspectratio=169,sn-mathphys-num]{beamer}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[sorting=none]{biblatex}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{slashed}
+
+\addbibresource{./Material/references.bib}
+
+\usetheme[numbering=counter, progressbar=frametitle, background=light]{metropolis}
+
+\usecolortheme{dove}
+\definecolor{primary}{RGB}{88, 24, 124}
+\definecolor{secondary}{RGB}{0, 168, 150}
+
+\setbeamercovered{transparent}
+\setbeamercolor{frametitle}{fg=white, bg=primary}
+\setbeamercolor{progress bar}{fg=secondary}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamercolor{alerted text}{fg=secondary}
+\setbeamercolor{block title}{fg=primary}
+\setbeamercolor{block body}{bg=white}
+
+\setstretch{1.1}
+
+\setmainfont{Fira Sans}
+\setmathfont{TeX Gyre Pagella Math}
+
+\title{Theoretical Physics}
+\author{Julian Avila}
+\institute{Universidad Distrital Francisco José de Caldas}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\tableofcontents
+\end{frame}
+
+\input{./Sections/content.tex}
+
+\section{References}
+\begin{frame}[allowframebreaks]{References}
+	\printbibliography
+	\nocite{*}
+\end{frame}
+
+\begin{frame}[plain]
+\centering
+\vspace{1cm}
+{\Huge \textbf{Thank you!}}\\[1cm]
+{\large Questions or comments?}
+\end{frame}
+
+\end{document}
